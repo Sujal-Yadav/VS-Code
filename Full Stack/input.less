@@ -1,0 +1,60 @@
+@primary-color: #0000ff;
+@padding: 10px;
+@white: red;
+@background-dark: pink;
+@carousel-item-height: 2px;
+.container {
+   .base-container {
+       font-size: 24px;
+       padding-right: round(@padding);
+       color: @primary-color;
+       border: 2px solid black;
+   }
+   .base2-container {
+       font-size: 62px;
+       padding-right: round(@padding);
+       color: @primary-color;
+       border: 2px solid red;
+   }
+}
+
+.zero-margin {
+    margin:0px auto;
+    background: @white;
+}
+  
+.row-header {
+    .zero-margin;
+    padding:0px auto;
+}
+
+.carousel {
+    background:@background-dark;
+  
+    .carousel-item {
+        height: @carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+            border: 2px solid green;
+        }
+    }
+}
+
+.carousel-item {
+    height: @carousel-item-height;
+}
+  
+.carousel-item .item-large {
+    height: @carousel-item-height *2;
+}
+
+@width: 0.8;
+@base: 0.2;
+.class {
+    width: percentage(@width); // Returns `80%`
+    color: saturate(@base, 5%);
+    
+}

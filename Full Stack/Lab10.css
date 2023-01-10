@@ -1,0 +1,31 @@
+body{
+    background-color: green;
+    /* This is single line comment */
+    /* This 
+    is 
+    a 
+    mutliline
+    comment */
+}
+
+#para1{
+    text-align: right;
+    font-family: Sofia;
+    font-size: 40px;
+    color: #c689c6;
+    text-transform: uppercase;
+}
+#para2{
+    text-align: center;
+    font-family: Trirong;
+    font-size: 60px;
+    letter-spacing: 50px;
+    color: rgb(55, 78, 208);
+}
+#para3{
+    text-align: center;
+    font-family: Audiowide;
+    font-size: 100px;
+    color: rgba(200, 6, 24, 0.5);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.527);
+}

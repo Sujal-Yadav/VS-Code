@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUJAL YADAV E21CSEU0636 LAB 12</title>
+    <style>
+        /* Question-1 */
+        @keyframes question1 {
+            from {
+                background-color: yellow;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
+
+        #div1 {
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            animation-name: question1;
+            animation-duration: 4s;
+        }
+
+        /* Question-2 */
+        @keyframes question2 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+        #div2 {
+            
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question2;
+            animation-duration: 4s;
+        }
+
+        /* Question-3 */
+        @keyframes question3 {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 100px; top: 0px;}
+            50% {background-color: blue; left: 100px; top: 100px;}
+            75% {background-color: green; left: 0px; top: 100px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        #div3 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question3;
+            animation-duration: 4s;
+        }
+
+        /* Question-4 */
+        @keyframes question4 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+        #div4 {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation-name: question4;
+            animation-duration: 4s;
+            animation-delay: 2s;
+        }
+
+        /* Question-5 */
+        @keyframes question5 {
+            0% {background-color: red;}
+            25% {background-color: yellow;}
+            50% {background-color: blue;}
+            100% {background-color: green;}
+        }
+
+        #div5 {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation-name: question5;
+            animation-duration: 4s;
+            animation-delay: -2s;
+        }
+
+        /* Question-6 */
+
+        @keyframes question6 {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 100px; top: 0px;}
+            50% {background-color: blue; left: 100px; top: 100px;}
+            75% {background-color: green; left: 0px; top: 100px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        #div6 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question6;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+        }
+
+        /* Question-7 */
+        @keyframes question7 {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 100px; top: 0px;}
+            50% {background-color: blue; left: 100px; top: 100px;}
+            75% {background-color: green; left: 0px; top: 100px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        #div7 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question7;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* Question-8 */
+        @keyframes question8 {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 100px; top: 0px;}
+            50% {background-color: blue; left: 100px; top: 100px;}
+            75% {background-color: green; left: 0px; top: 100px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        #div8 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question8;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+
+        /* Question-9 */
+        @keyframes question9 {
+            0% {background-color: red; left: 0px; top: 0px;}
+            25% {background-color: yellow; left: 100px; top: 0px;}
+            50% {background-color: blue; left: 100px; top: 100px;}
+            75% {background-color: green; left: 0px; top: 100px;}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+        #div9 {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            background-color: red;
+            animation-name: question9;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+    <br>
+    <div id="div3"></div>
+    <br><br><br><br><br><br>
+    <div id="div4"></div>
+    <br>
+    <div id="div5"></div>
+    <br>
+    <div id="div6"></div>
+    <br><br><br><br><br><br>
+    <div id="div7"></div>
+    <br><br><br><br><br><br>
+    <div id="div8"></div>
+    <br><br><br><br><br><br>
+    <div id="div9"></div>
+</body>
+
+</html>

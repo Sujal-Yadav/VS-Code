@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 16 (only 4 labs left I can do this)</title>
+    <script>
+
+        function f1() {
+            const num1 = 20;
+            const num2 = 21;
+            console.log("Question - 1");
+            console.log('The sum of numbers ', num1, ' and ', num2, ' is: ', num1 + num2);
+        }
+        function f2() {
+            const nums = [23, 543, 5, 23, 94, 64, 35, 24, 84, 44, 23];
+            var sum = 0;
+            for (let i = 0; i < nums.length; i++) {
+                sum += nums[i]
+            }
+            const mean = sum / nums.length
+            console.log("Question - 2");
+            console.log(mean)
+        }
+        function f3() {
+            function q3(p1 = 10, p2 = 10) {
+                return p1 * p2;
+            }
+            console.log("Question - 3");
+            console.log(q3());
+            console.log(q3(100))
+            console.log(q3(1000, 1000))
+        }
+        function f4() {
+            let q4 = (p1, p2, p3) => p1 + p2 + p3
+            console.log("Question - 4");
+            console.log(q4(2, 5, 12))
+        }
+        function f5() {
+            class polygon {
+                constructor(sides, length) {
+                    this.lenght = length;
+                    this.sides = sides;
+
+                }
+
+            }
+
+            class rhombus extends polygon {
+                constructor(sides) {
+                    super(sides);
+                }
+                show(sides) {
+                    let peri = 2 * sides;
+                    console.log("Perimeter of Rhombus is: " + peri);
+                }
+            }
+            class hexagon extends polygon {
+
+                constructor(sides) {
+                    super(sides);
+                }
+                show(sides) {
+                    let peri = sides * 2;
+                    console.log("Perimeter of Hexagon is: " + peri);
+                }
+            }
+
+
+            let fig = new rhombus(4);
+            let fig1 = new hexagon(6);
+            console.log("Question - 5");
+            fig.show(4);
+            fig1.show(6);
+
+        }
+        function f6() {
+            function mean6(...theArgs) {
+                let total = 0;
+                var count = 0;
+                for (const arg of theArgs) {
+                    total += arg;
+                    count += 1;
+                }
+                return total / count;
+            }
+            console.log("Question - 6");
+            console.log(mean6(1.0, 2.0, 3.0));
+        }
+        function f7() {
+            function mean7(x, y, z) {
+                let t1 = x + y + z  + "strhgv";
+                return t1 / 3;
+            }
+
+            const numbers = [1, 2, 3];
+            console.log("Question - 7");
+            console.log(mean7(...numbers));
+        }
+        function f8() {
+            let { a, b, ...rest1 } = { name: 'Arun', position: 'First', rollno: '24' };
+            console.log("Question - 8");
+            console.log(rest1);
+        }
+    </script>
+    <script type="module">
+        import { names } from "./Lab16.js";
+        name = "Sujal Yadav";
+        console.log("Question - 9");
+        names(name);
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="f1()" value="Q1">
+    <input type="button" onclick="f2()" value="Q2">
+    <input type="button" onclick="f3()" value="Q3">
+    <input type="button" onclick="f4()" value="Q4">
+    <input type="button" onclick="f5()" value="Q5">
+    <input type="button" onclick="f6()" value="Q6">
+    <input type="button" onclick="f7()" value="Q7">
+    <input type="button" onclick="f8()" value="Q8">
+</body>
+
+</html>

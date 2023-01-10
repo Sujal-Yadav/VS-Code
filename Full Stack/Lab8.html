@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style8.css">
+    <style>
+        .footer {
+            position: fixed;
+            background-color: rgb(13, 17, 221);
+            color: aliceblue;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleMenu() {
+            var menuBox = document.getElementById('menu-box');
+            if (menuBox.style.display == "none") { // if is menuBox not displayed, display it
+                menuBox.style.display = "block";
+            }
+            else { // if is menuBox displayed, hide it
+                menuBox.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" target="_blank" class="active">Home</a>
+        <a href="#news" target="_blank">News</a>
+        <a href="#contact" target="_blank">Contact</a>
+        <a href="#about" target="_blank">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <ul id="menu-box" style="display: inline-flexbox;">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="animal.html">Animal</a></li>
+        <li><a href="pictures.html">Pictures</a></li>
+    </ul>
+    <div class="header">
+        <img src="https://collegedakhla.com/collegeimage/qsbdrm_9d2e25e7e87b7a0e77d72bc9233c583e.png" width=100px
+            height=90px alt="Please reload the page." align=left>
+        <h1>Bennett University</h1>
+    </div>
+    <iframe width="425" height="240" src="https://www.youtube.com/embed/sdzHg15KqkU?list=PLDucVXZ2QbNPEMVzQIYZ7VZhddiCi5Sfb" title="Microsoft offers INR 44 LPA to a B.Tech. CSE Student at Bennett University" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="footer">
+        All rigths reserved @2022 Copyright.
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">HOME
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="ABOUT.htm">ABOUT</a>
+            <a href="MISSION.htm">MISSION</a>
+            <a href="TEAM.htm">TEAM</a>
+        </div>
+    </div>
+    <div class="dropdown">
+
+        <button class="dropbtn">ACTIVITIES
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="SPORTS.htm">SPORTS</a>
+            <a href="ACADEMICS.htm">ACADEMICS</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">FACILITIES
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="SPORTSCOMP.htm">SPORTS COMPLEX</a>
+            <a href="LIB.htm">LIBRARY</a>
+            <a href="HOST.htm">HOSTELS</a>
+            <a href="CAFE.htm">CAFETERIA</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">CLUBS
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="FS.htm">FULLSTACK</a>
+            <a href="Dev.htm">DEVOPS</a>
+            <a href="AI.htm">AI</a>
+            <a href="BLOCK.htm">BLOCKCHAIN</a>
+        </div>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">CONTACT US
+            <i class="fa fa-caret-down"></i>
+        </button>
+    </div>
+    </div>
+    
+</body>
+
+</html>

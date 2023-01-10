@@ -1,0 +1,44 @@
+.container .base-container {
+  font-size: 24px;
+  padding-right: 10px;
+  color: #0000ff;
+  border: 2px solid black;
+}
+.container .base2-container {
+  font-size: 62px;
+  padding-right: 10px;
+  color: #0000ff;
+  border: 2px solid red;
+}
+.zero-margin {
+  margin: 0px auto;
+  background: red;
+}
+.row-header {
+  margin: 0px auto;
+  background: red;
+  padding: 0px auto;
+}
+.carousel {
+  background: pink;
+}
+.carousel .carousel-item {
+  height: 2px;
+}
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 300px;
+  border: 2px solid green;
+}
+.carousel-item {
+  height: 2px;
+}
+.carousel-item .item-large {
+  height: 4px;
+}
+.class {
+  width: 80%;
+  color: saturate(0.2, 5%);
+}

@@ -1,0 +1,168 @@
+import pyautogui
+import time 
+time.sleep(5)
+pyautogui.write("""#include<iostream>
+using namespace std;
+
+class Node{
+public:
+int data;
+Node* prev;
+Node* next;
+
+Node(){
+this -> data = data;
+this -> prev = NULL;
+this -> next = NULL;
+}
+};
+
+//insert at head / start
+void insertHead(Node* &head, int d){
+Node* temp = new Node();
+    temp -> data = d;
+temp -> next = head;
+head -> prev = temp;
+head = temp;
+}
+
+//insert at tail / last
+void insertTail(Node* &tail, int d){
+Node* temp = new Node();
+temp -> data = d;
+tail -> next = temp;
+temp -> prev = tail;
+tail = temp;
+}
+
+
+void insertAtPosition(Node* &head, Node* &tail, int posi, int d){
+
+Node* temp = head;
+int cnt = 1;
+
+    //Insert At Head
+if(posi == 1){
+insertHead(head, d);
+return;
+}
+
+while(cnt < posi - 1){
+temp = temp -> next;
+cnt++;
+}
+
+if(temp -> next == NULL){
+insertTail(tail, d);
+return;
+}
+
+Node* insertnode = new Node();
+insertnode -> data = d;
+insertnode -> next = temp -> next;
+temp -> next -> prev = insertnode;
+temp -> next = insertnode;
+insertnode -> prev = temp;
+
+}
+
+void deleteNode(Node* &head, Node* &tail, int posi){
+
+if(posi == 1){
+Node* temp = head;
+head = head -> next;
+temp -> next = NULL;
+free(temp);
+}
+else{
+Node* curr = head;
+Node* previous = NULL;
+int cnt = 1;
+while(cnt < posi){
+previous = curr;
+curr = curr -> next;
+cnt++;
+}
+    
+previous -> next = curr -> next;
+        // curr -> next -> prev = curr -> prev;
+curr -> next = NULL;
+if(previous -> next == NULL){
+tail = previous;
+}
+free(curr);
+
+}
+}
+void print(Node* &head){
+Node* temp = head -> next;
+while(temp != NULL){
+cout << temp -> data << " ";
+temp = temp -> next;
+}
+cout << endl;
+}
+
+void verify(Node* &head, Node* &tail, int c, int d){
+    Node* temp = head;
+    for(int i = 0; i < 5; i++){
+        if(temp -> data == c){
+            print(head);
+        }
+        else{
+            insertAtPosition(head, tail, c, d);
+            print(head);
+        }
+    }
+}
+
+int main(){
+Node* node1 = new Node();
+Node* head = node1;
+Node* tail = node1;
+
+int a;
+cin >> a;
+for(int i = 0; i < a; i++){
+    int b;
+    cin >> b;
+    insertTail(tail, b);
+}
+print(head);
+int c, d;
+
+verify(head, c , d);
+    // // print(head);
+    // insertHead(head, 12);
+    // // print(head);
+
+    // insertHead(head, 15);
+    // // print(head);
+
+    // insertTail(tail, 20);
+    // // print(head);
+
+    // insertTail(tail, 30);
+    // // print(head);
+
+    // insertTail(tail, 19);
+    // // print(head);
+
+    // insertAtPosition(head, tail, 3, 6);
+    // // print(head);
+
+    // insertAtPosition(head, tail, 1, 9);
+    // // print(head);
+
+    // insertAtPosition(head, tail, 9, 14);
+    // // print(head);
+
+    // insertAtPosition(head, tail, 10, 9);
+    // print(head);
+
+    // deleteNode(head, tail, 10);
+    // print(head);
+
+    // cout << "Head is: " << head -> data << endl;
+    // cout << "Tail is: " << tail -> data << endl;
+}""")

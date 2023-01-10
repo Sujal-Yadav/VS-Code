@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+} 
+.grid{
+    padding: 15px;
+    border: 1px solid rgb(11, 172, 11);
+    position: relative;
+    margin: 2px;
+
+}
+#grid1{
+    width: 8.33%;
+}
+#grid2{
+    width: 16.66%;
+}
+#grid3{
+    width: 24.99%;
+}
+#grid4{
+    width: 33.32%;
+}
+#grid5{
+    width: 41.65%;
+}
+#grid6{
+    width: 49.98%;
+}
+#grid7{
+    width: 58.31%;
+}
+#grid8{
+    width: 66.64%;
+}
+#grid9{
+    width: 74.97%;
+}
+#grid10{
+    width: 83.33%;
+}
+#grid11{
+    width: 91.63%;
+}
+#grid12{
+    width: 100%;
+}
+
+
+
+#box1{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgb(102, 227, 243);
+    border: 15px solid rgb(8, 8, 8);
+    box-sizing: content-box;
+    position: relative;
+  }
+
+#box2{
+    width: 200px;
+    top: -250px;
+    height: 200px;
+    padding: 10px;
+    background-color: rgb(102, 227, 243);
+    border: 15px solid rgb(8, 8, 8);
+    box-sizing: border-box;
+    position: relative;
+    left: 260px;
+}
+
+@media only screen and (max-width: 350px) {
+    body {
+      background-color: rgb(18, 165, 214);
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    h1 {
+      background-color: rgb(229, 233, 14);
+      font-style: italic;
+      text-align: right;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    p {
+      color: brown;
+      border-width: 2px ;
+    }
+  }
